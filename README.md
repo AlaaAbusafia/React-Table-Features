@@ -1,4 +1,4 @@
-# Archipro frontend code challenge
+# ArchiPro frontend code challenge
 
 
 ![Screen](https://archipro.co.nz/themes/archipro2/images/archipro_dev.png)
