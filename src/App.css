@@ -33,4 +33,11 @@
 
 .col-title{
   margin-right: 3rem;
+  font-weight: bold;
+  color: black;
+}
+.reset-btn{
+  margin-left: -1.6rem;
+
+       
 }
