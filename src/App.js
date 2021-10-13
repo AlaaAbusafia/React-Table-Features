@@ -18,7 +18,13 @@ const App =() => {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage] = useState(5);
 
+  //Get current Rows
+  const indexOfLastRow = currentPage * rowsPerPage;
+  const indexOfFirstRow = indexOfLastRow - rowsPerPage;
+  const currentRows = dataSource.slice(indexOfFirstRow, indexOfLastRow);
 
+
+  //Get Filter Search Result
   const filterTable =(filterTable) =>{
       setDataSource(filterTable)
   }
@@ -38,10 +44,10 @@ const App =() => {
             <SearchFilter dataSource={data}  filterTable={filterTable} />
             <Row>
               <Col>
-                <TableData dataSource={dataSource} />
+                <TableData dataSource={currentRows} />
                 <Pagination 
                   rowsPerPage={rowsPerPage} 
-                  totalRows={data.length } 
+                  totalRows={dataSource.length} 
                   paginate={paginate}
                 />
               </Col>
