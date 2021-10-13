@@ -28,8 +28,20 @@ const TableData = (props) => {
                     >
                         <span className="col-title">Name</span>
                         <i class="fa fa-sort" aria-hidden="true" color="black"></i>
-                    </Button></th>
-                <th>Email</th>
+                    </Button>
+                </th>
+                <th>
+                    <Button
+                        outline
+                        color="secondary"
+                        //change click handler
+                        onClick={() => requestSort('email')}
+                        className={getClassNamesFor('email')}
+                    >
+                        <span className="col-title">Email</span>
+                        <i class="fa fa-sort" aria-hidden="true" color="black"></i>
+                    </Button>
+                </th>
                 <th>Phone</th>
             </thead>
             <tbody>
