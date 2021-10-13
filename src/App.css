@@ -30,3 +30,22 @@
 .App-table{
   text-align: left;
 }
+
+.col-title{
+  margin-right: 3rem;
+  font-weight: bold;
+  color: black;
+}
+.reset-btn{
+  margin-left: -1.6rem;
+ 
+}
+
+@media only screen and (max-width: 700px) {
+ .col-title{
+  margin-right: 1rem;
+}
+  .reset-btn{
+    margin-left: -1.3rem;
+  }
+}
