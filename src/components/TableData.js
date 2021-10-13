@@ -26,12 +26,14 @@ const TableData = (props) => {
                         onClick={() => requestSort('name')}
                         className={getClassNamesFor('name')}
                     >
-                        <span>Name</span></Button></th>
+                        <span className="col-title">Name</span>
+                        <i class="fa fa-sort" aria-hidden="true" color="black"></i>
+                    </Button></th>
                 <th>Email</th>
                 <th>Phone</th>
             </thead>
             <tbody>
-            {props.dataSource.map( row => (
+            {rows.map( row => (
                 <tr key={row._id}>
                 <td>{row.name}</td>
                 <td>{row.email}</td>
